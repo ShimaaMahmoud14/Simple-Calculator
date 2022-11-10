@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple calculator</title>
+<style type="text/css">
+h1{
+	text-align: center;
+}	
+form{
+	text-align: center;
+	position: relative;
+}
+body{
+	background-color: powderblue;
+	font-style: italic;
+	font-family: sans-serif;
+	font-weight: 300;
+}
+	input{
+		width: 300px;
+		position: relative;
+	}
+	.sh{
+		font-style: italic;
+	font-family: cursive;
+	font-weight: 300;
+	}
+</style>
+</head>
+<body>
+ <h1> Simple Calculator</h1>
+ <form name="form1">
+ Enter number 1 <input type="text" name="n1" ><br><br>
+ Enter number 2 <input type="text" name="n2" ><br><br>
+     Result     <input type="text" name="res" ><br><br>
+ <input type="button" value="Sumition" onclick="add()" class="sh">
+ <input type="button" value="Subtract"onclick="sub()" class="sh"><br><br>
+ <input type="button" value="Multiplication"onclick="mult()" class="sh">
+ <input type="button" value="Division"onclick="div()" class="sh">
+</form>
+ <script type="text/javascript">
+function add()
+{
+x=parseFloat(document.form1.n1.value);
+y=parseFloat(document.form1.n2.value);
+document.form1.res.value=x+y;
+}
+function sub()
+{
+x=parseFloat(document.form1.n1.value);
+y=parseFloat(document.form1.n2.value);
+document.form1.res.value=x-y;
+}
+function mult()
+{
+x=parseFloat(document.form1.n1.value);
+y=parseFloat(document.form1.n2.value);
+document.form1.res.value=x*y;
+}
+function div()
+{
+x=parseFloat(document.form1.n1.value);
+y=parseFloat(document.form1.n2.value);
+document.form1.res.value=x/y;
+}
+ </script>
+
+</body>
+</html>
+</body>
+</html>
